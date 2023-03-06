@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.layout-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flx-header{
+    padding: 10px;
+    background-color: blue;
+}
+
+.flx-main-container{
+    display: flex;
+    flex: 1;
+}
+
+.flx-article-section{
+    background-color: #85f71a;
+    padding: 10px;
+    flex: 1;
+}
+
+.flx-nav,.flx-aside{
+    background-color: #ff0d80;
+    padding: 10px;
+    flex: 1;
+}
+
+.flx-footer{
+    background-color: red;
+    padding: 10px;
+}
+
+@media all and (max-width: 500px){
+    .flx-main-container{
+        flex-direction: coloumn;
+    }
+    .flx-article-section{
+        flex:1;
+    }
+    .flx-nav,.flx-aside{
+        flex:1;
+    }
+}
